@@ -1,0 +1,21 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// Adicionar na tabela os dados de PEDIDOS: String [] e PREÇOS.
+
+model dataClient {
+  id          String   @id @default(uuid())
+  nome        String
+  celular     String
+  endereco    String
+  data_pedido DateTime @default(now())
+}
