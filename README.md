@@ -1,5 +1,11 @@
-# api-mec
+# api-mec (VERCEL + PRISMA + NEON.TECH)
 API Utilizando conceitos do NLW Rocketseat (Node + Typescript + Prisma)
+API => Github > Vercel
+BD => API > PRISMA > NEON.TECH
+
+Primeiramente apliquei a configuração para banco de dados local usando SQLITE na configuração do prisma.
+Depois foi modificado para POSTGRESQL, para fazer o "npx prisma migrate dev" do BD na NEON TECH, para depois ser utilizado pelo endereço da API na VERCEL.
+
 
 # NLW Journey Rocketseat (Trilha Node.JS)
 
